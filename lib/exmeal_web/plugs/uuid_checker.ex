@@ -1,4 +1,4 @@
-defmodule Exmeal.Plugs.UUIDChecker do
+defmodule ExmealWeb.Plugs.UUIDChecker do
   import Plug.Conn
 
   alias Ecto.UUID
