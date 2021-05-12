@@ -6,7 +6,7 @@ defmodule Exmeal.Meals.CreateTest do
   alias Exmeal.Meals.Create
 
   describe "call/1" do
-    test "when all params are valid, returns a create meal" do
+    test "when all params are valid, returns a created meal" do
       params = build(:meal_params)
 
       response = Create.call(params)

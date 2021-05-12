@@ -27,10 +27,9 @@ defmodule Exmeal.MealTest do
 
       response = Meal.changeset(params)
 
-      assert %Changeset{
-               changes: _changes,
-               valid?: false
-             } = response
+      expected_response = %{calories: ["can't be blank"]}
+
+      assert errors_on(response) == expected_response
     end
   end
 end
