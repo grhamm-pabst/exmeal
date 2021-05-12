@@ -18,10 +18,12 @@ defmodule Exmeal.Factory do
   end
 
   def meal_factory do
+    {:ok, date} = NaiveDateTime.new(2021, 6, 23, 13, 23, 45)
+
     %Meal{
       id: "5484b227-0f8f-4e84-ab01-41fd7c4c43dc",
       description: "pizza",
-      date: NaiveDateTime.new(2021, 6, 23, 13, 23, 45),
+      date: date,
       calories: 123
     }
   end

@@ -9,6 +9,10 @@
         "lib/exmeal/repo.ex",
         "lib/exmeal_web.ex",
         "lib/exmeal_web/views/error_helpers.ex",
-        "lib/exmeal_web/telemetry.ex"
+        "lib/exmeal_web/telemetry.ex",
+        "lib/exmeal_web/views/error_view.ex",
+        "lib/exmeal_web/controllers/fallback_controller.ex",
+        "lib/exmeal_web/plugs/uuid_checker.ex",
+        "lib/exmeal.ex"
     ]
 }
