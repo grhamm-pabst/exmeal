@@ -2,7 +2,6 @@ defmodule Exmeal.User do
   use Ecto.Schema
   import Ecto.Changeset
 
-  # alias Ecto.Changeset
   alias Exmeal.Meal
 
   @primary_key {:id, :binary_id, autogenerate: true}
@@ -11,7 +10,7 @@ defmodule Exmeal.User do
 
   @derive {Jason.Encoder, only: @required_params ++ [:id]}
 
-  schema "meals" do
+  schema "users" do
     field :name, :string
     field :cpf, :string
     field :email, :string
